@@ -1,0 +1,82 @@
+body{
+    margin: 5vmax;
+    min-width: 600px;
+    padding: 0;
+    font-family: sans-serif, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(imagenes/fondo.avif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    color: white;
+  
+}
+
+h1{
+    font-size: 50px;
+    /* background-color: black; */
+}
+
+nav ul {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    /* background-color: black; */
+    
+}
+
+/* nav ul li {
+    flex: auto;
+} */
+
+nav ul li {
+    
+    padding: 10px;
+    background-color: rgb(32, 32, 59);
+    border: 1px solid rgb(255, 254, 254);
+    font-size: 20px;
+    text-align: center;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    background-color:rgb(7, 29, 3);
+}
+
+img {
+    max-width: 100%;
+    border: 2px solid white;
+}
+
+#box-Pelicula {
+    margin-top: 100px;
+    justify-content:center;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    
+}
+
+.card{
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(247, 39, 39);
+    padding: 1em;
+    flex: 0 1 em;
+   max-width: 25em;
+}
+
+.btn1 {
+    
+    border: 1px white solid;
+    color: white;
+    background-color: rgb(53, 52, 52);
+    padding: 1px;
+    margin-bottom: 2px;
+}
