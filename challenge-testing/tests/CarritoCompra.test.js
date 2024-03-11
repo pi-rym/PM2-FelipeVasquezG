@@ -9,7 +9,7 @@ it('deberia ser siempre true', () =>{
 /*
 // constructor(): Inicializa el carrito como un array vacío.
 
-//carritoCompra debe ser clase
+//carritoCompr  a debe ser clase
 
 //CarritoCompra deebe ser una instacia de la clase carriotoCompra
 
@@ -20,7 +20,6 @@ it('deberia ser siempre true', () =>{
 // aplicarDescuento(porcentaje): Aplica un descuento al total de la compra según el porcentaje especificado.
 
 el metodo agregarProducto deberia poder agragar a la lista un producto
-
 
 */
     
