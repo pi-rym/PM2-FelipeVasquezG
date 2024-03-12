@@ -1,10 +1,24 @@
-const boxPelicula = document.getElementById('box-pelicula');
+
 const createMovie = require("./renderCards");
 
+const axios = require("axios");
 
-$.get("https://students-api.2.us-1.fl0.io/movies", (moviesData) =>{
-        createMovie(moviesData)
-});
+const fetchMovie = async () =>{
+      
+        try {
+         const data = await axios.get("https://students-api.up.railway.app/movies");
+                createMovie(data.data);    
+        } catch (error) {
+               console.log(error.message);
+        }
+      
+};
+fetchMovie();
+
+// const boxPelicula = document.getElementById('box-pelicula');
+// $.get("https://students-api.up.railway.app/movies", (moviesData) =>{
+//         createMovie(moviesData)
+// });
 
 
 // const createMovie = (tempData) => {

@@ -1,3 +1,4 @@
+
 const createMovie = (tempData) => {
     
   const boxPelicula = document.getElementById('box-pelicula');
