@@ -3,11 +3,18 @@
 const totalMovies = require("../services/moviesService");
 
 
-const moviesController =(req, res) =>{
-   const movies = totalMovies.createMovie();
+const moviesController = async (req, res) =>{
+  try {
+    const movies = await totalMovies.createMovie();
    res.status(200).json(movies);
+    
+  } catch (error) {
+    res.status(500).send(error.message);
+        
+  } 
 };
 
 module.exports = {
+   
     moviesController
 };
