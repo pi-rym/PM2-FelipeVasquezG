@@ -1,12 +1,11 @@
 //funciones de la logica de cada ruta
 
-const {Router} = require("express");
+const totalMovies = require("../services/moviesService");
 
 
 const moviesController =(req, res) =>{
-    res
-    .status(200)
-    .send("proximamente tendras el listado de peliculas del Front");
+   const movies = totalMovies.createMovie();
+   res.status(200).json(movies);
 };
 
 module.exports = {
