@@ -2,10 +2,9 @@
 
 const totalMovies = require("../services/moviesService");
 
-
 const moviesController = async (req, res) =>{
   try {
-    const movies = await totalMovies.createMovie();
+    const movies = await totalMovies.getMovie();
    res.status(200).json(movies);
     
   } catch (error) {
@@ -14,7 +13,6 @@ const moviesController = async (req, res) =>{
   } 
 };
 
-module.exports = {
-   
+module.exports = {   
     moviesController
 };

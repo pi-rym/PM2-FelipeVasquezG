@@ -1,5 +1,11 @@
 const app = require("./src/server");
 
-app.listen(3000, ()=>{
+const dbCon = require("./src/config/dbCon");
+
+dbCon().then(
+    res=>{
+      app.listen(3000, ()=>{
     console.log("Prueba servidor");
-});
+});  
+ });
+
