@@ -1,9 +1,12 @@
+
+require("dotenv").config();
+
 const mongoose = require("mongoose");
 
+const URI = process.env.URI;
+
 const dbCon = async ()  => {
-  await mongoose.connect (
-    "mongodb+srv://afvasquezgarcia:DYUftbELOMcsCLbh@cluster0.rukgor9.mongodb.net/movies?retryWrites=true&w=majority&appName=Cluster0"
-    );  
+  await mongoose.connect (URI);  
 };
 
 module.exports = dbCon;
