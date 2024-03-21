@@ -2,10 +2,10 @@
 const createMovie = (tempData) => {
     
   const boxPelicula = document.getElementById('box-pelicula');
-    // const boxPelicula = document.getElementById('box-pelicula');
+
     console.log(boxPelicula);
       tempData.forEach(movie => {
-        //destructurar objetos 
+     
         const{title,year,director,duration,genre,rate,poster} = movie;
 
         // const movieDiv = document.createElement('div');
@@ -69,7 +69,7 @@ const createMovie = (tempData) => {
         </div>
       </div>`
 
-       boxPelicula.appendChild(movieDiv);
+       boxPelicula?.appendChild(movieDiv);
 
     });
 };
