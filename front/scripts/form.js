@@ -26,11 +26,15 @@ const rate = parseFloat(document.getElementById('rate').value);
 // const rate = document.getElementById('rate').value;
 const poster = document.getElementById('poster').value;
 
+const nuevaPelicula ={title, year, director, duration, genre, rate, poster};
 
-const error = validateForm ({title, year, director, duration, genre, rate, poster});
+const error = validateForm (nuevaPelicula);
 if(error) return alert(error);
 
-return alert("DATOS CORRECTOS")
+axios.post("http://localhost:3000/movies",  nuevaPelicula)
+    .then(()=> alert ("PELICULA CREADA"))
+    .catch((err)=> alert ("ERROR AL CREAR LA PELICULA"));
+// return alert("DATOS CORRECTOS")
 }
 
 const submit = document.getElementById("movieForm");
@@ -64,4 +68,5 @@ function deleteForm () {
    const botonDeletForm = document.getElementById('delete');
     
     botonDeletForm.addEventListener('click', deleteForm);
+
 
