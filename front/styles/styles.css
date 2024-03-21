@@ -4,7 +4,7 @@ body{
     min-width: 600px;
     padding: 0;
     font-family: sans-serif, Georgia, Times, 'Times New Roman', serif;
-    background-image: url(imagenes/fondo.avif);
+    background-image: url(imagenes/interestelar.pnj.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,4 +102,11 @@ nav ul li:hover{
     margin-left: 7%;
     font-size: 20px;
     font-weight: bold;
+}
+footer {
+    background-color: #0c0129;
+    color: #fff;
+    border: solid white 2px;
+    border-radius: 20px;
+    padding: 0 50px;
 }
